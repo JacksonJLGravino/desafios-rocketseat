@@ -1,0 +1,122 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root{
+  --fundo: #0F0D13;
+  --player: #2A2141;
+  --cor-primaria: #E1E1E6;
+  --cor-detalhe: #C4C4CC;
+}
+
+body{
+  background-color:  var(--fundo);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 66px;
+  gap: 32px;
+}
+
+.nameMusic{
+  color: var(--cor-primaria);
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.bandName{
+  color: var(--cor-primaria);
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 19px;
+  opacity: 0.67;
+}
+
+
+/*----- Player 1 -----*/
+.player-1{
+  background: var(--player);
+ /* height: 500px;*/
+  border-radius: 10px;
+  padding-inline: 38px;
+  padding-block: 50px;
+}
+
+.albumImg-1{
+  height: 190px;
+  width: 190px;
+  border-radius: 6px;
+  margin-bottom: 28px;
+}
+
+.play-1{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+
+/*----- Player1 e player 2*/
+
+.musicPlayer{
+  width: 100%;
+  margin-top: 28px;
+}
+
+.musicTime{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.musicTime span{
+  color: var(--cor-detalhe);
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+
+/*----- player2 e player3 -----*/
+
+.player-2, .player-3{
+  padding-inline: 28px;
+  padding-block: 30.5px;
+  background: var(--player);
+  border-radius: 10px;
+}
+
+.musicText{
+  margin-left: 28px;
+}
+
+.musicInfo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 17px;
+}
+
+.albumImg-2, .albumImg-3{
+  height: 84px;
+  width: 84px;
+  border-radius: 6px;
+}
+
+.play-2, .play-3{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 28px;
+}
+
+.player-3{
+  margin-top: 32px;
+}
+
+@media screen and (max-width: 660px) {
+  body{
+    flex-direction: column;
+  }
+}

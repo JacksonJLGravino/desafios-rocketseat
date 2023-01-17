@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600&family=Lato:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Card de produto</title>
+  </head>
+  <body>
+    <section class="product-img">
+      <div class="to-show">
+        <img src="assets/sofa.png" alt="" />
+        <a onclick="toShow()"><img src="assets/icon360.svg" alt="" /></a>
+      </div>
+
+      <div class="to-close">
+        <img class="img" src="assets/Sofa.gif" alt="" />
+        <a onclick="toClose()"><img src="assets/icon-close.svg" alt="" /></a>
+      </div>
+    </section>
+
+    <section class="product-info">
+      <p class="product-code">CÓDIGO: 42404</p>
+      <h3 class="product-name">Sofá Margot II - Rosé</h3>
+      <p class="product-price">R$ 4.000</p>
+      <button>ADICIONAR À CESTA</button>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
