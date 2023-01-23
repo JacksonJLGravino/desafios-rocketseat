@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Botões e Cursores</title>
+  </head>
+  <body>
+    <section class="types-buttons">
+      <h2>Tipos de botão</h2>
+      <p>
+        Dentro de um layout, botões servem para destacar ações importantes a
+        serem tomadas. Acompanhe abaixo um exemplo de tipos e propriedades.
+      </p>
+      <section class="table">
+        <table>
+          <tr class="table-header">
+            <th></th>
+            <th>BOTÃO PRIMÁRIO</th>
+            <th>BOTÃO SECUNDÁRIO</th>
+            <th>BOTÃO TERCIÁRIO</th>
+            <th>CURSOR</th>
+          </tr>
+
+          <tr class="default">
+            <th>DEFAULT</th>
+            <td><div class="default-primary">DEFAULT PRIMARY</div></td>
+            <td><div class="default-secondary">DEFAULT SECONDARY</div></td>
+            <td><div class="default-tertiary">DEFAULT TERTIARY</div></td>
+            <td><img src="img/cursor1-button.svg" alt="" /></td>
+          </tr>
+
+          <tr class="hover">
+            <th>HOVER</th>
+            <td><div class="hover-primary">HOVER PRIMARY</div></td>
+            <td><div class="hover-secondary">HOVER SECONDARY</div></td>
+            <td><div class="hover-tertiary">HOVER TERTIARY</div></td>
+            <td><img src="img/cursor1-button.svg" alt="" /></td>
+          </tr>
+
+          <tr class="focus">
+            <th>FOCUS</th>
+            <td><div class="focus-primary">FOCUS PRIMARY</div></td>
+            <td><div class="focus-secondary">FOCUS SECONDARY</div></td>
+            <td><div class="focus-tertiary">FOCUS TERTIARY</div></td>
+            <td><img src="img/cursor1-button.svg" alt="" /></td>
+          </tr>
+
+          <tr class="disabled">
+            <th>DISABLED</th>
+            <td><div class="disabled-primary">DISABLED PRIMARY</div></td>
+            <td><div class="disabled-secondary">DISABLED SECONDARY</div></td>
+            <td><div class="disabled-tertiary">DISABLED TERTIARY</div></td>
+            <td><img src="img/cursor-disable.png" alt="" /></td>
+          </tr>
+
+          <tr class="loading">
+            <th>LOADING</th>
+            <td>
+              <div class="loading-primary">
+                <img src="img/loading-button.png" alt="" />LOADING PRIMARY
+              </div>
+            </td>
+            <td>
+              <div class="loading-secondary">
+                <img src="img/loading-button.png" alt="" />LOADING SECONDARY
+              </div>
+            </td>
+            <td>
+              <div class="loading-tertiary">
+                <img src="img/loading-button.png" alt="" />LOADING TERTIARY
+              </div>
+            </td>
+            <td><img src="img/cursor-loading.svg" alt="" /></td>
+          </tr>
+
+          <tr class="mobile">
+            <th>MOBILE</th>
+            <td>
+              <div class="mobile-primary">
+                <img src="img/mobile-button.svg" alt="" />MOBILE PRIMARY
+              </div>
+            </td>
+            <td>
+              <div class="mobile-secondary">
+                <img src="img/mobile-button.svg" alt="" />MOBILE SECONDARY
+              </div>
+            </td>
+            <td>
+              <div class="mobile-tertiary">
+                <img src="img/mobile-button.svg" alt="" />MOBILE TERTIARY
+              </div>
+            </td>
+            <td><img src="img/cursor-mobile.svg" alt="" /></td>
+          </tr>
+        </table>
+      </section>
+    </section>
+
+    <section class="button-test">
+      <h2>Teste os botões</h2>
+      <p>
+        Interaja com os botões e observe a mudança de aparência e de cursores
+      </p>
+      <button class="button-primary">INTERAJA COMIGO</button>
+      <button class="button-secondary" disabled>INTERAJA COMIGO</button>
+      <button class="button-tertiary">
+        <img src="img/mobile-button.svg" alt="" />INTERAJA COMIGO
+      </button>
+    </section>
+  </body>
+</html>
