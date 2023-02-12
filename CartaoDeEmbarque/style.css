@@ -1,0 +1,138 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+body{
+  background: linear-gradient(167.96deg, #8257E5 0%, #271A45 100%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section{
+  background: white;
+  border-radius: 24px;
+  width: 327px;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+}
+
+h2{
+  margin-bottom: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+p{
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.64);
+}
+
+strong{
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.88);
+}
+
+.flight-info{
+  padding-top: 24px;
+  margin-bottom: 24px;
+}
+
+.flight-info,.travel-information ,.passanger-info, .boarding-info-container, .attention{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 32px;
+}
+
+.flight-date, .arrival, .seat{
+  text-align: end;
+}
+
+h3{
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.time{
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+}
+
+.arrival .time{
+  display: flex;
+  justify-content: end;
+}
+
+span{
+  font-weight: 500;
+  font-size: 10px;
+}
+
+.ellipse{
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #513790;
+  position: relative;
+}
+
+.left{
+  top: 12px;
+  right: 12px;
+}
+
+.right{
+  bottom: 14px;
+  left: 315px;
+}
+
+.boarding-info{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.boarding-time p{
+  margin-bottom: 4px;
+}
+
+.boarding-time strong{
+  background: #633BBC;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.qr-code > div{
+  height: 140px;
+  width: 140px;
+}
+
+.attention{
+  margin-block: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer{
+  color: white;
+  opacity: 0.64;
+  text-align: center;
+  max-width: 270px;
+  padding-top: 20px;
+}
