@@ -5,15 +5,8 @@
   font-family: 'Roboto', sans-serif;
 }
 
-:root{
-  --fundo: #0F0D13;
-  --player: #2A2141;
-  --cor-primaria: #E1E1E6;
-  --cor-detalhe: #C4C4CC;
-}
-
 body{
-  background-color:  var(--fundo);
+  background-color:  #0F0D13;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,27 +15,37 @@ body{
 }
 
 .nameMusic{
-  color: var(--cor-primaria);
+  color: #E1E1E6;
   font-weight: 700;
   font-size: 24px;
 }
 
 .bandName{
-  color: var(--cor-primaria);
+  color: #E1E1E6;
   margin-top: 10px;
   font-weight: 400;
   font-size: 19px;
   opacity: 0.67;
 }
 
+button{
+  background: none;
+  cursor: pointer;
+  border: none;
+}
+
+button i{
+  font-size: 30px;
+  color: white;
+}
 
 /*----- Player 1 -----*/
 .player-1{
-  background: var(--player);
- /* height: 500px;*/
+  background: #2A2141;
   border-radius: 10px;
   padding-inline: 38px;
   padding-block: 50px;
+  max-width: 267px;
 }
 
 .albumImg-1{
@@ -55,14 +58,22 @@ body{
 .play-1{
   display: flex;
   justify-content: space-between;
-  margin-top: 28px;
+  margin-block: 28px;
 }
 
 /*----- Player1 e player 2*/
 
-.musicPlayer{
-  width: 100%;
-  margin-top: 28px;
+.progress-bar {
+  height: 6px;
+  background-color: #5E586F;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.progress {
+  height: 6px;
+  background-color: #D9D9D9;
+  border-radius: 5px;
 }
 
 .musicTime{
@@ -72,19 +83,18 @@ body{
 }
 
 .musicTime span{
-  color: var(--cor-detalhe);
+  color: #C4C4CC;
   font-size: 14px;
   font-weight: 400;
   opacity: 0.7;
 }
-
 
 /*----- player2 e player3 -----*/
 
 .player-2, .player-3{
   padding-inline: 28px;
   padding-block: 30.5px;
-  background: var(--player);
+  background: #2A2141;
   border-radius: 10px;
 }
 
@@ -103,6 +113,10 @@ body{
   height: 84px;
   width: 84px;
   border-radius: 6px;
+}
+
+.play-2{
+  margin-bottom: 28px;
 }
 
 .play-2, .play-3{
