@@ -2,7 +2,6 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,49 +13,63 @@
     <title>Calculadora</title>
   </head>
   <body>
-    <div></div>
-    <div class="calculadora">
+    <section class="calculadora">
       <div class="header">
-        <p class="historico">1 + 1</p>
-        <div class="contas">
-          <p class="sinal">=</p>
-          <p class="numero">2</p>
+        <p class="historico"></p>
+        <div class="conta">
+          <p class="sinal"></p>
+          <p class="numero"></p>
         </div>
       </div>
 
       <div class="teclado">
         <div class="teclas">
-          <div class="ce">CE</div>
-          <div>C</div>
-          <div>%</div>
-          <div class="operacao"><img src="img/divisao.svg" alt="" /></div>
+          <button type="submit" class="ce" onclick="limpar()">CE</button>
+          <button type="submit" onclick="limparTudo()">C</button>
+          <button type="submit" onclick="porcento()">%</button>
+          <button type="submit" class="operacao" onclick="calcular('/')">
+            <img src="./img/divisao.svg" alt="" />
+          </button>
         </div>
         <div class="teclas">
-          <div>7</div>
-          <div>8</div>
-          <div>9</div>
-          <div class="operacao"><img src="img/multiplicacao.svg" alt="" /></div>
+          <button type="submit" onclick="botao(7)">7</button>
+          <button type="submit" onclick="botao(8)">8</button>
+          <button type="submit" onclick="botao(9)">9</button>
+          <button type="submit" class="operacao" onclick="calcular('*')">
+            <img src="./img/multiplicacao.svg" alt="" />
+          </button>
         </div>
+
         <div class="teclas">
-          <div>4</div>
-          <div>5</div>
-          <div>6</div>
-          <div class="operacao"><img src="img/subtracao.svg" alt="" /></div>
+          <button type="submit" onclick="botao(4)">4</button>
+          <button type="submit" onclick="botao(5)">5</button>
+          <button type="submit" onclick="botao(6)">6</button>
+          <button type="submit" class="operacao" onclick="calcular('-')">
+            <img src="./img/subtracao.svg" alt="" />
+          </button>
         </div>
+
         <div class="teclas">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div class="operacao"><img src="img/soma.svg" alt="" /></div>
+          <button type="submit" onclick="botao(1)">1</button>
+          <button type="submit" onclick="botao(2)">2</button>
+          <button type="submit" onclick="botao(3)">3</button>
+          <button type="submit" class="operacao" onclick="calcular('+')">
+            <img src="./img/soma.svg" alt="" />
+          </button>
         </div>
+
         <div class="teclas">
-          <div><img src="img/menos-e-mais.svg" alt="" /></div>
-          <div>0</div>
-          <div>,</div>
-          <div class="operacao"><img src="img/igual.svg" alt="" /></div>
+          <button type="submit" onclick="inverter()">
+            <img src="./img/menos-e-mais.svg" alt="" />
+          </button>
+          <button type="submit" onclick="botao(0)">0</button>
+          <button type="submit" onclick="decimal()">,</button>
+          <button type="submit" class="operacao">
+            <img src="./img/igual.svg" alt="" onclick="igual()" />
+          </button>
         </div>
       </div>
-    </div>
-    <div></div>
+    </section>
+    <script src="script.js"></script>
   </body>
 </html>
