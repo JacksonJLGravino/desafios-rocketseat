@@ -2,7 +2,6 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,49 +13,51 @@
     <title>Cartão de embarque</title>
   </head>
   <body>
-    <div id="boarding-pass">
-      <h1>Cartão de embarque</h1>
-      <main id="ticket">
-        <section class="top grid">
-          <div class="flight grid column">
-            <div class="number">
+    <header>
+      <h1>Cartão de Embarque</h1>
+    </header>
+    <main>
+      <section class="cartao-um">
+        <div class="top">
+          <div class="voo-info-header">
+            <div>
               <p>Voo</p>
               <strong>RS995</strong>
             </div>
-            <div class="date text-right">
+            <div class="text-right">
               <p>Data</p>
               <strong>23/05/2023</strong>
             </div>
           </div>
-          <div class="grid column">
-            <div class="departure grid">
+          <div class="voo-info">
+            <div class="embarque">
               <p>São Paulo, Brasil</p>
               <strong>GRU</strong>
               <time>17:00</time>
             </div>
-            <div class="airplane grid">
+            <div class="aviao">
               <img src="./img/airplane.svg" alt="ícone de um avião" />
             </div>
-            <div class="arrival text-right grid">
+            <div class="desembarque text-right">
               <p>São Francisco, EUA</p>
               <strong>SFO</strong>
               <time>04:48 <sup>+1</sup></time>
             </div>
           </div>
-        </section>
-        <section class="middle grid column">
-          <div class="name">
+        </div>
+        <div class="middle">
+          <div class="nome">
             <p>Passageiro</p>
             <strong>Rodrigo Terron</strong>
           </div>
-          <div class="seat text-right">
+          <div class="cadeira">
             <p>Assento</p>
             <strong>28A</strong>
           </div>
-        </section>
-        <section class="bottom">
-          <div class="container grid column">
-            <dl class="grid">
+        </div>
+        <div class="bottom">
+          <div class="container-bottom">
+            <dl>
               <dt>
                 <p>Embarque</p>
                 <time>16:15</time>
@@ -71,17 +72,80 @@
               </dt>
             </dl>
 
-            <div class="qrcode grid">
+            <div class="qrcode">
               <img src="./img/qr-code.png" alt="imagem de um qrcode" />
               <p>Grupo de embarque: 3</p>
             </div>
           </div>
           <p><strong>Atenção:</strong> o portão fecha 16:45</p>
-        </section>
-      </main>
-      <footer>
-        Qualquer problema procure o balcão de atendimento da sua companhia aérea
-      </footer>
-    </div>
+        </div>
+      </section>
+      <section class="cartao-dois">
+        <div class="top">
+          <div class="voo-info-header">
+            <div>
+              <p>Voo</p>
+              <strong>RS995</strong>
+            </div>
+            <div class="text-right">
+              <p>Data</p>
+              <strong>23/05/2023</strong>
+            </div>
+          </div>
+          <div class="voo-info">
+            <div class="embarque">
+              <p>São Paulo, Brasil</p>
+              <strong>GRU</strong>
+              <time>17:00</time>
+            </div>
+            <div class="aviao">
+              <img src="./img/airplane.svg" alt="ícone de um avião" />
+            </div>
+            <div class="desembarque">
+              <p>São Francisco, EUA</p>
+              <strong>SFO</strong>
+              <time>04:48 <sup>+1</sup></time>
+            </div>
+          </div>
+        </div>
+        <div class="middle">
+          <div class="nome">
+            <p>Passageiro</p>
+            <strong>Rodrigo Terron</strong>
+          </div>
+          <div class="cadeira">
+            <p>Assento</p>
+            <strong>28A</strong>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="container-bottom">
+            <dl>
+              <dt>
+                <p>Embarque</p>
+                <time>16:15</time>
+              </dt>
+              <dt>
+                <p>Terminal</p>
+                <strong>2</strong>
+              </dt>
+              <dt>
+                <p>Portão</p>
+                <strong>15</strong>
+              </dt>
+            </dl>
+
+            <div class="qrcode">
+              <img src="./img/qr-code.png" alt="imagem de um qrcode" />
+              <p>Grupo de embarque: 3</p>
+            </div>
+          </div>
+          <p><strong>Atenção:</strong> o portão fecha 16:45</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      Qualquer problema procure o balcão de atendimento da sua companhia aérea
+    </footer>
   </body>
 </html>

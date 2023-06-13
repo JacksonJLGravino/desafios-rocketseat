@@ -10,38 +10,22 @@
   font-size: 62.5%;
 }
 
-body {
+body{
   font-size: 1.6rem;
   font-family: "Rubik", sans-serif;
-  letter-spacing: -0.02em;
-
-  background: linear-gradient(167.96deg, #8257e5 0%, #271a45 100%) no-repeat
-    fixed;
-
-  height: 100vh;
-  display: grid;
-  place-content: center;
+  background: linear-gradient(167.96deg, #8257e5 0%, #271a45 100%) no-repeat fixed;
+  padding: 32px;
 }
 
-.grid {
-  display: grid;
+header{
+  text-align: center;
 }
 
-.column {
-  grid-auto-flow: column;
-}
-
-.text-right {
-  filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.25));
-  text-align: right;
-}
-
-h1,
-strong {
+h1, strong{
   font-weight: 500;
 }
 
-h1 {
+h1{
   font-size: 2rem;
   line-height: 2.4rem;
   color: white;
@@ -60,50 +44,76 @@ strong {
   color: rgba(0, 0, 0, 0.88);
 }
 
-section {
-  padding: 2.4rem 3.2rem;
+main{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-inline: auto;
+  gap: 32px;
+}
 
+.top, .middle, .bottom{
+  padding: 2.4rem 3.2rem;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
   background-color: white;
   -webkit-mask: var(--mask);
   mask: var(--mask);
-
-  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
 }
 
-#boarding-pass {
-  margin: auto;
-  padding-top: 5rem;
-}
-
-#ticket {
-  margin-top: 2rem;
-}
-
-.top {
-  border-radius: 2.4rem 2.4rem 0 0;
+.top{
+  background: white;
+  display: flex;
+  flex-direction: column;
   gap: 2.4rem;
+}
 
+.cartao-um .top{
+  border-radius: 2.4rem 2.4rem 0 0;
   --mask: radial-gradient(1.2rem at 1.2rem bottom, #0000 93%, black) -1.2rem;
   -webkit-mask-repeat: repeat-x;
   mask-repeat: repeat-x;
 }
 
-.departure,
-.arrival {
-  width: 12.5rem;
+.cartao-dois .top{
+  border-radius: 2.4rem;
 }
 
-.departure strong,
-.arrival strong {
+.voo-info-header{
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.text-right {
+  filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.25));
+  text-align: right;
+}
+
+.voo-info{
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.embarque, .desembarque{
+  display: grid;
+  width: 12.6rem;
+}
+
+.embarque strong, .desembarque strong{
   font-size: 4rem;
   line-height: 4.7rem;
 }
 
-.airplane {
+.desembarque{
+  text-align: right;
+}
+
+.aviao{
+  display: grid;
   align-self: center;
 }
 
-.top time {
+.top time{
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -113,33 +123,54 @@ section {
   line-height: 1.2rem;
 }
 
-.middle {
+.middle{
   border: 1px dashed rgba(0, 0, 0, 0.32);
   border-left: 0;
   border-right: 0;
+  display: grid;
+  grid-auto-flow: column;
+}
 
+.cartao-um .middle{
   --mask: radial-gradient(1.2rem at 1.2rem 1.2rem, #0000 93%, black) -1.2rem -1.2rem;
 }
 
-.bottom {
-  border-radius: 0 0 2.4rem 2.4rem;
+.cartao-dois .middle{
+  border-radius: 2.4rem;
+}
 
+.cadeira{
+  text-align: right;
+}
+
+.cartao-um .bottom{
+  border-radius: 0 0 2.4rem 2.4rem;
   --mask: radial-gradient(1.2rem at 1.2rem top, #0000 93%, black) -1.2rem;
   -webkit-mask-repeat: repeat-x;
   mask-repeat: repeat-x;
 }
 
-.bottom .container {
+.cartao-dois .bottom{
+  border-radius: 2.4rem;
+}
+
+.container-bottom{
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.bottom, .container-bottom{
   align-items: center;
   gap: 0.8rem;
 }
 
-dl.grid {
+dl{
+  display: grid;
   gap: 1.6rem;
   min-width: 9.5rem;
 }
 
-dt time {
+dl time{
   color: white;
   font-weight: 500;
   font-size: 1.6rem;
@@ -151,7 +182,12 @@ dt time {
   margin-top: 0.2rem;
 }
 
-.bottom > p {
+.qrcode{
+  display: grid;
+  justify-items: center;
+}
+
+.bottom > p{
   text-align: center;
   margin-top: 2.4rem;
   font-size: 1.6rem;
@@ -159,11 +195,7 @@ dt time {
   color: rgba(0, 0, 0, 0.8);
 }
 
-.qrcode.grid {
-  justify-items: center;
-}
-
-footer {
+footer{
   font-size: 1.4rem;
   line-height: 2.4rem;
   color: white;
