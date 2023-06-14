@@ -2,7 +2,6 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,21 +13,22 @@
     <title>Dashboard</title>
   </head>
   <body>
-    <main id="app" class="grid">
-      <div class="box nps grid">
-        <div class="top text-center">NPS geral</div>
-        <div class="middle grid">
+    <main class="app">
+      <div class="nps">
+        <div class="nps-top">NPS geral</div>
+        <div class="nps-middle">
           <img src="./assets/smile.svg" alt="bolinha verde sorrindo" />
           Excelente
         </div>
-        <div class="bottom">
+        <div class="nps-bottom">
           <span>NPS Score</span>
           <span>75</span>
         </div>
       </div>
-      <div class="box sell grid">
-        <div class="top text-center">Vendas fechadas</div>
-        <div class="middle">
+
+      <div class="sell">
+        <div class="sell-top">Vendas fechadas</div>
+        <div class="sell-middle">
           <svg viewBox="0 0 232 232" style="--percentage: 70">
             <circle cx="50%" cy="50%" r="98.5" opacity="0.1" stroke="#D9D9D9" />
             <circle
@@ -51,36 +51,26 @@
               </linearGradient>
             </defs>
           </svg>
-
-          <div class="content">
+          <div class="sell-content">
             <h3>70%</h3>
             <p>alcançada</p>
           </div>
         </div>
-        <div class="bottom">
-          <div class="item">
+        <div class="sell-bottom">
+          <div class="sell-item-um">
             <span>Esperado</span>
             <span>100</span>
           </div>
-          <div class="item">
-            <span
-              style="
-                --bg-color: linear-gradient(
-                  121.94deg,
-                  #ce9ffc 15.98%,
-                  #7367f0 82.85%
-                );
-              "
-            >
-              Alcançado</span
-            >
+          <div class="sell-item-dois">
+            <span>Alcançado</span>
             <span>70</span>
           </div>
         </div>
       </div>
-      <div class="box target grid">
-        <div class="top text-center">Meta mensal</div>
-        <div class="middle">
+
+      <div class="target">
+        <div class="target-top">Meta mensal</div>
+        <div class="target-middle">
           <svg viewBox="0 0 232 232" style="--percentage: 90">
             <circle cx="50%" cy="50%" r="98.5" opacity="0.1" stroke="#D9D9D9" />
             <circle
@@ -103,42 +93,33 @@
               </linearGradient>
             </defs>
           </svg>
-
-          <div class="content">
+          <div class="target-content">
             <h3>90%</h3>
             <p>alcançada</p>
           </div>
         </div>
-        <div class="bottom">
-          <div class="item">
+        <div class="target-bottom">
+          <div class="target-item-um">
             <span>Esperado</span>
             <span>R$ 70K</span>
           </div>
-          <div class="item">
-            <span
-              style="
-                --bg-color: linear-gradient(
-                  121.94deg,
-                  #df9780 15.98%,
-                  #a66de9 82.85%
-                );
-              "
-              >Alcançado</span
-            >
+          <div class="target-item-dois">
+            <span>Alcançado</span>
             <span>R$ 63K</span>
           </div>
         </div>
       </div>
-      <div class="box weekly-sell grid">
-        <div class="top">Vendas por dia da semana</div>
+
+      <div class="week">
+        <div class="week-top">Vendas por dia da semana</div>
 
         <div class="wrapper">
-          <div class="left grid">
-            <div class="most-sell grid">
+          <div class="left">
+            <div class="most-sell">
               <span>Dia com mais vendas</span>
               quarta-feira
             </div>
-            <div class="less-sell grid">
+            <div class="less-sell">
               <span>Dia com menos vendas</span>
               domingo
             </div>
