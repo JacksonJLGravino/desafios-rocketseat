@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página de clima</title>
     <link rel="stylesheet" href="style.css" />
+    <title>Página de clima</title>
   </head>
   <body>
     <main>
       <section class="temperature-now">
         <div class="location">
           <img src="./assets/pin.svg" alt="icone de localizacao" />
-          <strong>Rio do Sul, SC</strong>
+          <strong>Juiz de Fora, MG</strong>
         </div>
         <div class="temp">
           <div class="number">
-            18
-            <div class="maxmin">22° <span>16° </span></div>
+            <span id="temperatura"></span>
+            <div class="maxmin" id="maxmin"><b></b> <span></span></div>
           </div>
           <div class="celsius">°C</div>
         </div>
@@ -31,21 +31,21 @@
             <img src="./assets/temp-wind.svg" alt="icone de vento" />
             <div class="info">
               <p>Vento</p>
-              <h5>17 <span>km/h</span></h5>
+              <h5 id="vento"></h5>
             </div>
           </div>
           <div class="stats">
             <img src="./assets/temp-humidity.svg" alt="icone de umidade" />
             <div class="info">
               <p>Umidade</p>
-              <h5>31 <span>%</span></h5>
+              <h5 id="umidade"></h5>
             </div>
           </div>
           <div class="stats">
             <img src="./assets/temp-rain.svg" alt="icone de chuva" />
             <div class="info">
               <p>Chuva</p>
-              <h5>10 <span>%</span></h5>
+              <h5 id="chuva"></h5>
             </div>
           </div>
         </div>
@@ -97,19 +97,19 @@
           Horário do sol
         </h2>
         <div class="sun-chart-wrapper">
-          <div class="sun-chart">
-            <div class="chart">
+          <div class="sun-chart" id="sun-chart">
+            <div class="chart" id="chart">
               <img
                 src="./assets/sun-chart.svg"
                 alt="imagem de um gráfico semi circulo com traços"
               />
             </div>
-            <time class="now">17:48</time>
+            <time class="now" id="now">17:48</time>
           </div>
         </div>
         <div class="time">
           <time class="sunrise">06:00</time>
-          <time class="sunset">18:52</time>
+          <time class="sunset">18:00</time>
         </div>
       </section>
 
@@ -145,5 +145,6 @@
         </div>
       </section>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>
