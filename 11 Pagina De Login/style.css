@@ -8,29 +8,14 @@
 
 :root {
   font-size: 62.5%;
-  font-family: "Titillium Web", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 body {
   font-size: 1.6rem;
 }
 
-button {
-  all: unset;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: #7c3aed;
-  font-weight: 700;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-#page {
+main {
   height: 100vh;
 }
 
@@ -38,13 +23,17 @@ a:hover {
   display: flex;
 }
 
-#page > * {
+main > * {
   width: 50%;
 }
 
 img {
-  width: 100%;
+  width: 50%;
   object-fit: cover;
+}
+
+header a {
+  text-decoration: none;
 }
 
 header img {
@@ -52,13 +41,23 @@ header img {
   height: 5.4rem;
 }
 
-#page > div {
+main > div {
   padding: 4rem 11.2rem;
 }
 
-main {
+.content {
   margin-top: 11.4rem;
   max-width: 38.4rem;
+}
+
+.content a {
+  text-decoration: none;
+  color: #7c3aed;
+  font-weight: 700;
+}
+
+.content a:hover {
+  text-decoration: underline;
 }
 
 .headline {
@@ -111,18 +110,13 @@ input::placeholder {
 
 input {
   width: 100%;
-
   background: #ffffff;
   border: 0.1rem solid #e2e8f0;
   border-radius: 0.4rem;
-
   padding: 1.6rem 1.2rem;
-
   margin-top: 0.8rem;
-
   font-size: 1.4rem;
   line-height: 2.1rem;
-
   color: #1e293b;
 }
 
@@ -153,21 +147,21 @@ input:disabled {
   display: none;
 }
 
+button {
+  all: unset;
+  box-sizing: border-box;
+}
+
 form button {
   display: flex;
-
   justify-content: center;
   align-items: center;
   padding: 1.6rem 2.4rem;
-
   background: #7c3aed;
   border-radius: 0.4rem;
-
   width: 100%;
-
   font-weight: bold;
   color: #ffffff;
-
   margin-block: 3.2rem;
 }
 
@@ -185,24 +179,24 @@ form button:hover {
 }
 
 @media (max-width: 900px) {
-  #page > * {
+  main > * {
     width: 100%;
   }
-  #page > img {
+  main > img {
     display: none;
   }
 
-  #page > div {
+  main > div {
     padding: 11rem;
   }
 
-  main {
+  .content {
     max-width: 100%;
   }
 }
 
 @media (max-width: 600px) {
-  #page > div {
+  main > div {
     padding: 4rem;
   }
 }
