@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  background: #fbfaff;
+  min-height: 100vh;
+  font-family: 'Inter';
+  line-height: 130%;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 440px;
+  width: 90%;
+  margin: auto;
+}
+
+.drag-files {
+  background: #f3f0ff;
+  border: 1px dashed #c1b2fa;
+  border-radius: 8px;
+  text-align: center;
+  padding: 28px 0 32px;
+  position: relative;
+}
+
+.drag-files input {
+  all: unset;
+  opacity: 0;
+  inset: 0;
+  position: absolute;
+}
+
+.drag-files i.ph {
+  font-size: 48px;
+  color: #7c3aed;
+}
+
+.drag-files h3 {
+  margin-top: 12px;
+  color: #7a5fec;
+  font-size: 16px;
+}
+
+.drag-files p {
+  font-size: 14px;
+  color: #746e82;
+}
+
+.drag-files.dragover {
+  background: #ebe6ff;
+}
